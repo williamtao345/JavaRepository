@@ -40,7 +40,7 @@ public class byteBox {
     }
 
     private static void viewOperations(int[] minOperations, ArrayList<Boolean> iBoxes) {
-        int length = Math.max(iBoxes.lastIndexOf(true), iBoxes.lastIndexOf(false));
+        int length = Math.max(iBoxes.lastIndexOf(true), iBoxes.lastIndexOf(false)) + 1;
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < length; j++) {
                 if (j == i) {
